@@ -1,0 +1,78 @@
+/* 🌲 全站背景 */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #1f5e3b, #2e7d32, #1b4332);
+  color: white;
+  min-height: 100vh;
+}
+
+/* 📦 內容區塊（讓文字不貼邊） */
+main {
+  padding: 30px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* 🌳 標題 */
+h1, h2 {
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+/* 🔗 連結 */
+a {
+  color: #b2ffb2;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 🎮 按鈕（升級成卡片感） */
+button {
+  padding: 10px 14px;
+  margin: 6px;
+  border: none;
+  border-radius: 10px;
+  background: #66bb6a;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+button:hover {
+  background: #81c784;
+  transform: scale(1.05);
+}
+
+/* 📦 段落美化（你原本沒有，但很重要） */
+p {
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+/* 🌿 葉子動畫 */
+.leaf {
+  position: fixed;
+  top: -50px;
+  width: 22px;
+  height: 22px;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/36/Leaf_icon_15.svg");
+  background-size: cover;
+  opacity: 0.85;
+  animation: fall linear infinite;
+}
+
+/* 🍃 掉落動畫 */
+@keyframes fall {
+  0% {
+    transform: translateY(-10vh) rotate(0deg);
+  }
+  100% {
+    transform: translateY(110vh) rotate(360deg);
+  }
+}
